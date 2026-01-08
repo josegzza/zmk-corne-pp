@@ -27,8 +27,8 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
   - {t: '''', s: '"'}
+  - $$mdi:keyboard-esc$$
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -42,11 +42,11 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
+  - $$mdi:apple-keyboard-shift$$
   - LGUI
   - NAV
-  - {t: '$$mdi:keyboard-space$$', h: Fn}
-  - {t: '$$mdi:keyboard-return$$', h: Fn}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - NUM_SYM
   - $$mdi:apple-keyboard-option$$
   NAV:
@@ -191,10 +191,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   MouseNav:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -246,5 +246,49 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [1, 15, 29]
-  k: '&soft_off'
+- p: [38, 39]
+  k: {t: ;, s: ':'}
+- p: [28, 41]
+  k: $$mdi:apple-keyboard-caps$$
+- p: [17, 16]
+  k: (
+- p: [23, 24]
+  k: )
+- p: [3, 4]
+  k: {t: '[', s: '{'}
+- p: [8, 9]
+  k: {t: ']', s: '}'}
+- p: [24, 25]
+  k: ':'
+- p: [15, 16]
+  k: {t: '`', s: '~'}
+- p: [31, 32]
+  k: '{'
+- p: [37, 38]
+  k: '}'
+- p: [3, 2]
+  k: <
+- p: [9, 10]
+  k: '>'
+- p: [32, 37]
+  k: {t: '-', s: _}
+- p: [4, 8]
+  k: +
+- p: [17, 23]
+  k: {t: '=', s: +}
+- p: [30, 31]
+  k: '|'
+- p: [3, 9]
+  k: '*'
+- p: [16, 24]
+  k: $
+- p: [31, 38]
+  k: '!'
+- p: [18, 22]
+  k: '&'
+- p: [33, 36]
+  k: _
+- p: [26, 25]
+  k: \
+- p: [14, 15]
+  k: '~'
