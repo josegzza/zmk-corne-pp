@@ -216,20 +216,20 @@
         lower_layer {
             display-name = "NAV";
             bindings = <
-&kp TAB  &kp PAGE_DOWN  &kp PAGE_UP   &kp INS         &trans            &trans                    &trans          &trans    &trans    &trans        &trans     &trans  &kp BSPC
-&mo 4    &sk LEFT_GUI   &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &trans            &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP        &kp RIGHT  &trans  &trans
-&trans   &trans         &trans        &trans          &trans            &trans  &trans            &trans          &kp DEL   &kp HOME  &kp END       &trans     &trans  &trans
-                                      &kp LEFT_GUI    &trans            &trans                                    &trans    &trans    &kp LEFT_ALT
+&trans  &trans        &kp K_FIND     &kp K_REDO      &kp LC(K_UNDO)  &trans                    &trans          &trans  &kp HOME  &kp END         &trans        &trans     &trans
+&mo 4   &kp K_SELECT  &kp LC(K_CUT)  &kp LC(K_COPY)  &kp K_PASTE     &trans            &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &trans        &trans         &trans          &trans          &trans  &trans            &trans          &trans  &trans    &trans          &trans        &trans     &trans
+                                     &trans          &trans          &trans                                    &trans  &trans    &trans
             >;
         };
 
         raise_layer {
-            display-name = "NUM_SYM";
+            display-name = "#SYM";
             bindings = <
-&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                    &trans          &kp UNDERSCORE  &kp AMPS         &kp ASTRK    &kp MINUS  &kp PLUS  &kp BSPC
-&trans  &kp N0  &kp N4  &kp N5  &kp N6  &trans            &trans  &trans  &trans  &kp EQUAL       &kp DOLLAR       &kp PERCENT  &kp CARET  &kp BSLH  &kp GRAVE
-&trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans            &trans          &kp MINUS       &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp PIPE  &kp TILDE
-                        &trans  &trans  &trans                                    &trans          &trans           &trans
+&trans  &kp AT_SIGN  &kp EXCLAMATION  &kp UNDERSCORE  &kp PLUS   &trans                    &trans          &kp LS(DOLLAR)  &kp N7  &kp N8  &kp N9  &kp PLUS  &kp BSPC
+&trans  &kp HASH     &kp QUESTION     &kp ASTERISK    &kp EQUAL  &trans            &trans  &trans  &trans  &kp N0          &kp N4  &kp N5  &kp N6  &kp BSLH  &kp GRAVE
+&trans  &kp SLASH    &kp AMPERSAND    &kp PERCENT     &kp MINUS  &trans  &trans            &trans          &kp DOT         &kp N1  &kp N2  &kp N3  &kp PIPE  &kp TILDE
+                                      &trans          &trans     &trans                                    &trans          &trans  &trans
             >;
         };
 
@@ -247,10 +247,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &mkp LCLK       &mkp MCLK       &mkp RCLK     &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
-                        &trans  &trans  &trans                                    &trans          &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &mkp MB1        &mkp MB3        &mkp MB2      &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+                        &trans  &trans  &trans                                    &trans  &trans          &trans
             >;
 
             label = "MouseNav";
