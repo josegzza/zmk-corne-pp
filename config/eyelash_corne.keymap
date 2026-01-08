@@ -58,6 +58,7 @@
             bindings = <&kp SEMICOLON>;
             key-positions = <38 39>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         cpslck {
@@ -158,13 +159,13 @@
 
         dollar {
             bindings = <&kp DOLLAR>;
-            key-positions = <16 24>;
+            key-positions = <14 26>;
             layers = <0>;
         };
 
         excl {
             bindings = <&kp EXCLAMATION>;
-            key-positions = <31 38>;
+            key-positions = <15 25>;
             layers = <0>;
         };
 
@@ -189,6 +190,12 @@
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <14 15>;
+            layers = <0>;
+        };
+
+        question_left {
+            bindings = <&kp QUESTION>;
+            key-positions = <16 24>;
             layers = <0>;
         };
     };
