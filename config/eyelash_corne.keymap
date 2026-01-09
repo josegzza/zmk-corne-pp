@@ -202,26 +202,31 @@
         guion {
             bindings = <&kp MINUS>;
             key-positions = <7 5>;
+            layers = <0>;
         };
 
         hash {
             bindings = <&kp HASH>;
             key-positions = <29 30>;
+            layers = <0>;
         };
 
         at {
             bindings = <&kp AT>;
             key-positions = <1 2>;
+            layers = <0>;
         };
 
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <39 40>;
+            layers = <0>;
         };
 
         caret {
             bindings = <&kp CARET>;
             key-positions = <10 11>;
+            layers = <0>;
         };
     };
 
