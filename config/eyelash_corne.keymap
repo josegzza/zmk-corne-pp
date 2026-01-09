@@ -98,7 +98,7 @@
         };
 
         grave {
-            bindings = <&kp GRAVE>;
+            bindings = <&kp SQT>;
             key-positions = <15 16>;
             layers = <0>;
         };
@@ -153,19 +153,19 @@
 
         astrsk {
             bindings = <&kp ASTERISK>;
-            key-positions = <3 9>;
+            key-positions = <16 24>;
             layers = <0>;
         };
 
-        dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <14 26>;
-            layers = <0>;
-        };
-
-        excl {
+        excla {
             bindings = <&kp EXCLAMATION>;
-            key-positions = <15 25>;
+            key-positions = <31 38>;
+            layers = <0>;
+        };
+
+        qmrk {
+            bindings = <&kp QUESTION>;
+            key-positions = <9 3>;
             layers = <0>;
         };
 
@@ -187,8 +187,8 @@
             layers = <0>;
         };
 
-        tilde {
-            bindings = <&kp TILDE>;
+        forwardslash {
+            bindings = <&kp SLASH>;
             key-positions = <14 15>;
             layers = <0>;
         };
@@ -197,6 +197,31 @@
             bindings = <&kp QUESTION>;
             key-positions = <16 24>;
             layers = <0>;
+        };
+
+        guion {
+            bindings = <&kp MINUS>;
+            key-positions = <7 5>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <29 30>;
+        };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <1 2>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <39 40>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <10 11>;
         };
     };
 
@@ -216,33 +241,31 @@
         lower_layer {
             display-name = "NAV";
             bindings = <
-&trans  &trans        &kp K_FIND     &kp K_REDO      &kp LC(K_UNDO)  &trans                    &trans          &trans  &kp HOME  &kp END         &trans        &trans     &trans
-&mo 4   &kp K_SELECT  &kp LC(K_CUT)  &kp LC(K_COPY)  &kp K_PASTE     &trans            &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &trans        &trans         &trans          &trans          &trans  &trans            &trans          &trans  &trans    &trans          &trans        &trans     &trans
-                                     &trans          &trans          &trans                                    &trans  &trans    &trans
+&trans  &kp PRINTSCREEN  &kp K_FIND  &kp K_REDO  &kp K_UNDO   &trans                    &trans          &trans  &kp HOME  &kp END         &kp C_AC_ZOOM_IN  &kp C_AC_ZOOM_OUT  &trans
+&mo 4   &kp K_SELECT     &kp K_CUT   &kp K_COPY  &kp K_PASTE  &trans            &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT          &trans
+&trans  &trans           &kp LG(E)   &kp LG(V)   &kp LG(TAB)  &trans  &trans            &trans          &trans  &trans    &trans          &trans            &trans             &trans
+                                     &trans      &trans       &trans                                    &trans  &trans    &trans
             >;
         };
 
         raise_layer {
             display-name = "#SYM";
             bindings = <
-&trans  &kp AT_SIGN  &kp EXCLAMATION  &kp UNDERSCORE  &kp PLUS   &trans                    &trans          &kp LS(DOLLAR)  &kp N7  &kp N8  &kp N9  &kp PLUS  &kp BSPC
-&trans  &kp HASH     &kp QUESTION     &kp ASTERISK    &kp EQUAL  &trans            &trans  &trans  &trans  &kp N0          &kp N4  &kp N5  &kp N6  &kp BSLH  &kp GRAVE
-&trans  &kp SLASH    &kp AMPERSAND    &kp PERCENT     &kp MINUS  &trans  &trans            &trans          &kp DOT         &kp N1  &kp N2  &kp N3  &kp PIPE  &kp TILDE
-                                      &trans          &trans     &trans                                    &trans          &trans  &trans
+&kp TAB           &kp AT_SIGN  &kp EXCLAMATION  &kp UNDERSCORE  &kp PLUS   &kp SQT                              &trans          &kp DOLLAR  &kp N7  &kp N8  &kp N9  &kp PLUS  &kp BSPC
+&kp LEFT_SHIFT    &kp HASH     &kp QUESTION     &kp ASTERISK    &kp EQUAL  &kp DOUBLE_QUOTES            &trans  &trans  &trans  &kp N0      &kp N4  &kp N5  &kp N6  &kp BSLH  &kp ESC
+&kp LEFT_CONTROL  &kp CARET    &kp AMPERSAND    &kp PERCENT     &kp MINUS  &kp GRAVE          &trans            &trans          &kp DOT     &kp N1  &kp N2  &kp N3  &kp PIPE  &kp RIGHT_ALT
+                                                &trans          &trans     &trans                                               &trans      &trans  &trans
             >;
         };
 
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans           &rgb_ug RGB_BRI  &kp F7  &kp F8  &kp F9  &kp F12                    &trans          &bt BT_SEL 0  &kp K_VOLUME_UP  &kp C_MUTE        &kp K_VOLUME_DOWN  &trans  &trans
-&rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &kp F4  &kp F5  &kp F6  &kp F11            &trans  &trans  &trans  &bt BT_SEL 1  &kp K_PREVIOUS   &kp K_PLAY_PAUSE  &kp C_NEXT         &trans  &trans
-&rgb_ug RGB_ON   &rgb_ug RGB_OFF  &kp F1  &kp F2  &kp F3  &kp F10  &trans            &trans          &bt BT_SEL 2  &trans           &trans            &trans             &trans  &trans
-                                          &trans  &trans  &trans                                     &trans        &trans           &trans
+&rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &kp K_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &trans                    &trans          &bt BT_SEL 0  &kp F7  &kp F8  &kp F9  &trans  &trans
+&rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp K_PREV  &kp C_PAUSE           &kp C_NEXT            &trans            &trans  &trans  &trans  &bt BT_SEL 1  &kp F4  &kp F5  &kp F6  &trans  &trans
+&rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &trans            &trans          &bt BT_SEL 2  &kp F1  &kp F2  &kp F3  &trans  &trans
+                                              &trans                &trans                &trans                                    &trans        &trans  &trans
             >;
-
-            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_4 {
