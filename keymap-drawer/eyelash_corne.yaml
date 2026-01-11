@@ -99,7 +99,7 @@ layers:
   - MNAV
   - $$mdi:apple-keyboard-option$$
   WNAV:
-  - {t: MDEF, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - Gui+Sft+S
   - Ctl+F
   - Ctl+Y
@@ -109,8 +109,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - HOME
   - END
-  - AC ZOOM IN
-  - AC ZOOM OUT
+  - Ctl++
+  - {t: Ctl+-, s: Ctl+_}
   - Ctl+Q
   - MS-Nav
   - Ctl+A
@@ -128,8 +128,8 @@ layers:
   - $$mdi:arrow-right-bold$$
   - Ctl+W
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Ctl+-, s: Ctl+_}
-  - Ctl++
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - Alt+$$mdi:keyboard-tab$$
   - Gui+$$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -148,7 +148,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   MNAV:
-  - {t: WDEF, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - Gui+Sft+4
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - Gui+Sft+Z
@@ -158,8 +158,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - HOME
   - END
-  - AC ZOOM IN
-  - AC ZOOM OUT
+  - Gui++
+  - {t: Gui+-, s: Gui+_}
   - Gui+Q
   - MS-Nav
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
@@ -177,18 +177,18 @@ layers:
   - $$mdi:arrow-right-bold$$
   - Gui+W
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Gui+-, s: Gui+_}
-  - Gui++
-  - F3
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - Gui+$$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+$$mdi:arrow-left-bold$$
+  - Ctl+$$mdi:arrow-down-bold$$
+  - Ctl+$$mdi:arrow-up-bold$$
+  - Ctl+$$mdi:arrow-right-bold$$
   - Gui+Sft+T
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -436,4 +436,4 @@ combos:
   l: [MNAV]
 - p: [37, 38, 39, 40]
   k: {t: MDEF, h: toggle}
-  l: [MNAV]
+  l: [WDEF]
