@@ -436,4 +436,4 @@ combos:
   l: [MNAV]
 - p: [37, 38, 39, 40]
   k: {t: MDEF, h: toggle}
-  l: [WDEF]
+  l: [WNAV]
