@@ -346,91 +346,91 @@ layers:
 combos:
 - p: [38, 39]
   k: {t: ;, s: ':'}
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [28, 41]
   k: $$mdi:apple-keyboard-caps$$
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [17, 16]
   k: (
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [23, 24]
   k: )
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [3, 4]
   k: {t: '[', s: '{'}
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [8, 9]
   k: {t: ']', s: '}'}
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [24, 25]
   k: ':'
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [15, 16]
   k: {t: '''', s: '"'}
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [31, 32]
   k: '{'
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [37, 38]
   k: '}'
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [3, 2]
   k: <
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [9, 10]
   k: '>'
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [32, 37]
   k: {t: '-', s: _}
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [4, 8]
   k: +
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [17, 23]
   k: {t: '=', s: +}
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [30, 31]
   k: '|'
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [16, 24]
   k: '*'
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [31, 38]
   k: '!'
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [9, 3]
   k: '?'
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [18, 22]
   k: '&'
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [33, 36]
   k: _
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [26, 25]
   k: \
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [14, 15]
   k: {t: /, s: '?'}
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [16, 24]
   k: '?'
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [7, 5]
   k: {t: '-', s: _}
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [29, 30]
   k: '#'
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [1, 2]
   k: '@'
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [39, 40]
   k: '~'
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [10, 11]
   k: ^
-  l: [WDEF]
+  l: [WDEF, MDEF]
 - p: [37, 38, 39, 40]
   k: {t: WDEF, h: toggle}
   l: [MNAV]
