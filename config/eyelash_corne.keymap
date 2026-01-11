@@ -238,7 +238,7 @@
         OS-Windows-Mac {
             bindings = <&to 1>;
             key-positions = <37 38 39 40>;
-            layers = <0>;
+            layers = <2>;
         };
     };
 
