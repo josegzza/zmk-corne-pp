@@ -238,7 +238,7 @@
         OS-Windows-Mac {
             bindings = <&to 1>;
             key-positions = <37 38 39 40>;
-            layers = <3>;
+            layers = <0>;
         };
     };
 
@@ -268,20 +268,20 @@
         windowsNav {
             display-name = "WNAV";
             bindings = <
-&to 1   &kp LG(LS(S))  &kp LC(F)     &kp LC(Y)    &kp LC(Z)    &trans                    &trans          &trans  &kp HOME  &kp END         &kp C_AC_ZOOM_IN  &kp C_AC_ZOOM_OUT  &kp LC(Q)
-&mo 6   &kp LC(A)      &kp LC(X)     &kp LC(C)    &kp LC(V)    &trans            &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT          &kp LC(W)
-&trans  &kp LC(MINUS)  &kp LC(PLUS)  &kp LA(TAB)  &kp LG(TAB)  &trans  &trans            &trans          &trans  &trans    &trans          &trans            &trans             &kp LC(LS(T))
-                                     &trans       &trans       &trans                                    &trans  &trans    &trans
+&trans  &kp LG(LS(S))  &kp LC(F)  &kp LC(Y)    &kp LC(Z)    &trans                    &trans          &trans  &kp HOME  &kp END         &kp LC(PLUS)  &kp LC(MINUS)  &kp LC(Q)
+&mo 6   &kp LC(A)      &kp LC(X)  &kp LC(C)    &kp LC(V)    &trans            &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &kp LC(W)
+&trans  &trans         &trans     &kp LA(TAB)  &kp LG(TAB)  &trans  &trans            &trans          &trans  &trans    &trans          &trans        &trans         &kp LC(LS(T))
+                                  &trans       &trans       &trans                                    &trans  &trans    &trans
             >;
         };
 
         Mac-Nav {
             display-name = "MNAV";
             bindings = <
-&to 0   &kp LG(LS(NUMBER_4))  &kp LG(F)     &kp LG(LS(Z))  &kp LG(Z)      &trans                    &trans          &trans  &kp HOME  &kp END         &kp C_AC_ZOOM_IN  &kp C_AC_ZOOM_OUT  &kp LG(Q)
-&mo 6   &kp LG(A)             &kp LG(X)     &kp LG(C)      &kp LG(V)      &trans            &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT          &kp LG(W)
-&trans  &kp LG(MINUS)         &kp LG(PLUS)  &kp F3         &kp LG(SPACE)  &trans  &trans            &trans          &trans  &trans    &trans          &trans            &trans             &kp LG(LS(T))
-                                            &trans         &trans         &trans                                    &trans  &trans    &trans
+&trans  &kp LG(LS(NUMBER_4))  &kp LG(F)  &kp LG(LS(Z))  &kp LG(Z)      &trans                    &trans          &trans  &kp HOME      &kp END             &kp LG(PLUS)      &kp LG(MINUS)  &kp LG(Q)
+&mo 6   &kp LG(A)             &kp LG(X)  &kp LG(C)      &kp LG(V)      &trans            &trans  &trans  &trans  &trans  &kp LEFT      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT      &kp LG(W)
+&trans  &trans                &trans     &trans         &kp LG(SPACE)  &trans  &trans            &trans          &trans  &kp LC(LEFT)  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &kp LG(LS(T))
+                                         &trans         &trans         &trans                                    &trans  &trans        &trans
             >;
         };
 
