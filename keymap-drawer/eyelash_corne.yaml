@@ -99,7 +99,7 @@ layers:
   - MNAV
   - $$mdi:apple-keyboard-option$$
   WNAV:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: MDEF, h: toggle}
   - Gui+Sft+S
   - Ctl+F
   - Ctl+Y
@@ -148,7 +148,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   MNAV:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: WDEF, h: toggle}
   - Gui+Sft+4
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - Gui+Sft+Z
