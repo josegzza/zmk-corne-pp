@@ -169,8 +169,8 @@
             layers = <0 1>;
         };
 
-        ampersand {
-            bindings = <&kp AMPERSAND>;
+        at {
+            bindings = <&kp AT>;
             key-positions = <18 22>;
             layers = <0 1>;
         };
@@ -211,8 +211,8 @@
             layers = <0 1>;
         };
 
-        at {
-            bindings = <&kp AT>;
+        ampersant {
+            bindings = <&kp AMPERSAND>;
             key-positions = <1 2>;
             layers = <0 1>;
         };
@@ -251,7 +251,7 @@
 &kp TAB           &kp Q  &kp W  &kp E     &kp R  &kp T                        &trans          &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F  &kp G                &trans  &trans  &trans  &kp H      &kp J  &kp K      &kp L    &kp SQT   &kp ESCAPE
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V  &kp B      &trans            &trans          &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                                &kp LGUI  &mo 4  &kp SPACE                                    &kp ENTER  &mo 2  &kp RALT
+                                &kp LGUI  &mo 2  &kp SPACE                                    &kp ENTER  &mo 4  &kp RALT
             >;
         };
 
@@ -261,7 +261,7 @@
 &kp TAB           &kp Q  &kp W  &kp E     &kp R  &kp T                        &trans          &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F  &kp G                &trans  &trans  &trans  &kp H      &kp J  &kp K      &kp L    &kp SQT   &kp ESCAPE
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V  &kp B      &trans            &trans          &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                                &kp LGUI  &mo 4  &kp SPACE                                    &kp ENTER  &mo 3  &kp RALT
+                                &kp LGUI  &mo 3  &kp SPACE                                    &kp ENTER  &mo 4  &kp RALT
             >;
         };
 
@@ -300,7 +300,7 @@
             bindings = <
 &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &kp K_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &trans                    &trans          &bt BT_SEL 0  &kp F7  &kp F8  &kp F9  &trans  &trans
 &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp K_PREV  &kp C_PAUSE           &kp C_NEXT            &trans            &trans  &trans  &trans  &bt BT_SEL 1  &kp F4  &kp F5  &kp F6  &trans  &trans
-&rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &trans            &trans          &bt BT_SEL 2  &kp F1  &kp F2  &kp F3  &trans  &trans
+&rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &trans            &trans          &bt BT_SEL 2  &kp F1  &kp F2  &kp F3  &trans  &bt BT_CLR_ALL
                                               &trans                &trans                &trans                                    &trans        &trans  &trans
             >;
         };
